@@ -3,7 +3,7 @@ var app = express();
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
-  console.log(process.env.TIMES);
+  res.send("Variable TIMES = "+ process.env.TIMES);
 });
 
 let port = process.env.PORT;

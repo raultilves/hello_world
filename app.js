@@ -3,7 +3,7 @@ var app = express();
 
 app.get('/', function (req, res) {
   let times = process.env.TIMES;
-  res.send("Times="+times);
+  res.send("Probemos el automatic deploy!");
 });
 
 let port = process.env.PORT;

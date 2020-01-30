@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
-  res.send("Variable TIMES = "+ process.env.TIMES);
+  let times = process.env.TIMES;
+  res.send("Times="+times);
 });
 
 let port = process.env.PORT;
